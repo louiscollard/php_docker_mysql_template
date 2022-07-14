@@ -50,7 +50,7 @@
    array_push($web_development["backend"], "Flash");
    array_push($web_development["frontend"], "JavaScript");
    $web_development["frontend"][0] = "html";
-   unset($web_development["backend"]["Flash"]);
+   array_pop($web_development["backend"]);
 
    echo "<pre>";
    print_r($web_development);
