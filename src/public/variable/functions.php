@@ -62,6 +62,26 @@
    echo "</br>";
    feedback("Incorrect email address");
 
+   function getRandomWordShort() {
+      $len = rand(1,5);
+      $word = array_merge(range('a', 'z'));
+      shuffle($word);
+      return substr(implode($word), 0, $len);
+   }
+
+   function getRandomWordLong() {
+      $len = rand(7,15);
+      $word = array_merge(range('a', 'z'));
+      shuffle($word);
+      return substr(implode($word), 0, $len);
+   }
+
+   echo "<br>";
+   echo getRandomWordShort();
+   echo "<br>";
+   echo getRandomWordLong();
+   echo "<br>";
+
    echo "</br>";
    echo strtolower("STOP YELLING I CAN'T HEAR MYSELF THINKING!!");
 
