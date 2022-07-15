@@ -45,11 +45,10 @@
 
    $countries = array("BE" => "Belgium", "EN" => "England", "FN" => "Finland", "GE" =>"Germany", "ESP" =>"Spain", "JP" => "Japan" , "KOR" =>"South Korea","AU" =>"Australia", "WA" =>"Wales", "IRE" =>"Ireland");
    echo "<select name='country>";
-   foreach($countries as $country){
-      echo "<option value='country'>${country}</option>";
+   foreach($countries as $iso => $country){
+      echo "<option value='${iso}'>${country}</option>";
    };
-   echo "</select>"
-
+   echo "</select>";
    ?>
 </body>
 </html>
